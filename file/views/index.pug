@@ -88,7 +88,7 @@ head
     h2 SENSOR BAR
     p.state #{sens}
     p 
-// javascript begins from here---------------------------
+// JavaScript begins from here---------------------------
 script.
   window.addEventListener('load', onLoad);
   function onLoad(event) {
@@ -102,18 +102,18 @@ script.
   function toggle1(){
   // websocket.send('toggle1');
   const xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://skmqttserver.onrender.com/button1");
+  xhttp.open("GET", "https://nodejsmqttserver.onrender.com/button1");
   xhttp.send();
   }
   function toggle2(){
   //websocket.send('toggle2');
   const xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://skmqttserver.onrender.com/button2");
+  xhttp.open("GET", "https://nodejsmqttserver.onrender.com/button2");
   xhttp.send();
   }
   function toggle3(){
   const xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://skmqttserver.onrender.com/button3");
+  xhttp.open("GET", "https://nodejsmqttserver.onrender.com/button3");
   xhttp.send();
   //websocket.send('toggle3');
   }
